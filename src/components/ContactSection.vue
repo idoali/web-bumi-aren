@@ -1,4 +1,24 @@
 <script setup>
+import { ref } from 'vue';
+
+const nama = ref('');
+const email = ref('');
+const perusahaan = ref('');
+const pesan = ref('');
+
+const sendWhatsApp = () => {
+  const phoneNumber = '62882016687492';
+  const textMessage = `Halo Bumi Aren,
+
+Saya *${nama.value}* dari *${perusahaan.value}*.
+
+${pesan.value}
+
+(Email: ${email.value})`;
+
+  const encodedMessage = encodeURIComponent(textMessage);
+  window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+};
 </script>
 
 <template>
@@ -10,18 +30,18 @@
         <br>Tim Bumi Aren siap membantu Anda.
       </p>
 
-      <form class="contact-form" @submit.prevent>
+      <form class="contact-form" @submit.prevent="sendWhatsApp">
         <div class="form-group">
-          <input type="text" placeholder="Nama" required>
+          <input type="text" v-model="nama" placeholder="Nama" required>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Email" required>
+          <input type="email" v-model="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Perusahaan" required>
+          <input type="text" v-model="perusahaan" placeholder="Perusahaan" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Pesan" rows="5" required></textarea>
+          <textarea v-model="pesan" placeholder="Pesan" rows="5" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary submit-btn">Kirim Pesan</button>
       </form>

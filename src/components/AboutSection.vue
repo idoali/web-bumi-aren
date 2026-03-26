@@ -6,7 +6,7 @@
     <div class="container about-container">
       <div class="about-image-wrapper">
         <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1596707323533-5c7438e8cb22?ixlib=rb-4.0.3&auto=format&fit=crop&w=1080&q=80" alt="Petani menyadap pohon aren">
+          <img src="/sample-7.jpeg" alt="Petani menyadap pohon aren">
         </div>
         <div class="image-accent"></div>
       </div>

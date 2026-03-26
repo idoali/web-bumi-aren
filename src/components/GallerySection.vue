@@ -11,37 +11,65 @@
     <div class="container gallery-grid">
       <!-- Image 1 -->
       <div class="gallery-item large">
-        <img src="https://images.unsplash.com/photo-1546255146-2f0855ec6b6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Process">
+        <img src="/sample-2.jpeg" alt="Process">
         <div class="overlay">
           <span>Proses Alami</span>
         </div>
       </div>
       <!-- Image 2 -->
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1596707323533-5c7438e8cb22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Harvest">
+        <img src="/sample-3.jpeg" alt="Harvest">
         <div class="overlay">
           <span>Panen Tradisional</span>
         </div>
       </div>
       <!-- Image 3 -->
       <div class="gallery-item tall">
-        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Texture">
+        <img src="/sample-4.jpeg" alt="Texture">
         <div class="overlay">
           <span>Kualitas Premium</span>
         </div>
       </div>
       <!-- Image 4 -->
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Usage">
+        <img src="/sample-5.jpeg" alt="Usage">
         <div class="overlay">
           <span>Sajian Nikmat</span>
         </div>
       </div>
       <!-- Image 5 -->
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Packaging">
+        <img src="/sample-6.jpeg" alt="Packaging">
         <div class="overlay">
           <span>Kemasan Aman</span>
+        </div>
+      </div>
+      <!-- Image 6 -->
+      <div class="gallery-item">
+        <img src="/sample-8.jpeg" alt="Natural">
+        <div class="overlay">
+          <span>Keaslian Alam</span>
+        </div>
+      </div>
+      <!-- Image 7 -->
+      <div class="gallery-item">
+        <img src="/sample-10.jpeg" alt="Product Range">
+        <div class="overlay">
+          <span>Varian Produk</span>
+        </div>
+      </div>
+      <!-- Image 8 -->
+      <div class="gallery-item">
+        <img src="/sample-11.jpeg" alt="Crystallization">
+        <div class="overlay">
+          <span>Kristalisasi Sempurna</span>
+        </div>
+      </div>
+      <!-- Image 9 -->
+      <div class="gallery-item">
+        <img src="/sample-12.jpeg" alt="Sustainable">
+        <div class="overlay">
+          <span>Berkelanjutan</span>
         </div>
       </div>
     </div>
