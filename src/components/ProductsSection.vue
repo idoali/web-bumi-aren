@@ -13,7 +13,7 @@
       <!-- Product 1: Gula Aren Semut -->
       <div class="product-card">
         <div class="product-image">
-          <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gula Aren Semut">
+          <img src="/sample-9.jpeg" alt="Gula Aren Batok">
           <div class="overlay"></div>
         </div>
         <div class="product-info">
@@ -33,7 +33,7 @@
       <!-- Product 2: Sirup Aren -->
       <div class="product-card">
         <div class="product-image">
-          <img src="https://images.unsplash.com/photo-1543132649-74e21fec583c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sirup Aren"> <!-- Syrup placeholder -->
+          <img src="/sample-1.jpeg" alt="Sirup Aren">
           <div class="overlay"></div>
         </div>
         <div class="product-info">
