@@ -22,11 +22,17 @@ const activeTab = ref('batok')
         >
           Gula Aren Batok
         </button>
-        <button 
-          @click="activeTab = 'sirup'" 
+        <button
+          @click="activeTab = 'sirup'"
           :class="['tab-button', activeTab === 'sirup' ? 'active' : '']"
         >
           Sirup Aren
+        </button>
+        <button
+          @click="activeTab = 'semut'"
+          :class="['tab-button', activeTab === 'semut' ? 'active' : '']"
+        >
+          Gula Aren Semut
         </button>
       </div>
 
@@ -118,7 +124,7 @@ const activeTab = ref('batok')
         </div>
       </div>
 
-      <div class="process-content" v-else>
+      <div class="process-content" v-else-if="activeTab === 'sirup'">
         <div class="stepper-container">
           <!-- Step 1 -->
           <div class="stepper-item interaction-lift">
@@ -189,6 +195,101 @@ const activeTab = ref('batok')
           
           <div class="stepper-conclusion glass-morphism-card shadow-premium">
             <p><strong>Hasilnya:</strong> Sirup aren berwarna cokelat pekat, rasa manis legit alami, cocok untuk kopi, es campur, kolak, atau dessert modern.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="process-content" v-else-if="activeTab === 'semut'">
+        <div class="stepper-container">
+          <!-- Step 1 -->
+          <div class="stepper-item interaction-lift">
+            <div class="stepper-number">1</div>
+            <div class="stepper-card shadow-premium glass-morphism-card">
+              <h3>Penyadapan Nira</h3>
+              <ul>
+                <li>Nira diambil dari tandan bunga Arenga pinnata pagi atau sore hari.</li>
+                <li>Penyadap memanjat pohon untuk mengambil nira segar yang ditampung dalam wadah bersih.</li>
+                <li class="important"><strong>Penting:</strong> Kebersihan alat sangat penting agar nira tidak cepat asam dan kualitas gula tetap terjaga.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="stepper-item interaction-lift">
+            <div class="stepper-number">2</div>
+            <div class="stepper-card shadow-premium glass-morphism-card">
+              <h3>Penyaringan Nira</h3>
+              <ul>
+                <li>Nira yang terkumpul disaring untuk memisahkan kotoran seperti serat, debu, atau serpihan alami.</li>
+                <li>Proses ini penting agar hasil akhir lebih bersih dan higienis.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="stepper-item interaction-lift">
+            <div class="stepper-number">3</div>
+            <div class="stepper-card shadow-premium glass-morphism-card">
+              <h3>Pemasakan Nira</h3>
+              <ul>
+                <li>Nira yang sudah disaring dimasak di atas tungku dengan api sedang sambil terus diaduk perlahan.</li>
+                <li>Tujuan pemasakan adalah mengurangi kadar air hingga cairan berubah menjadi kental dan berwarna cokelat keemasan.</li>
+                <li class="important"><strong>Penting:</strong> Pembuat gula harus teliti menjaga suhu agar nira tidak gosong dan rasa manis alaminya tetap terjaga.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="stepper-item interaction-lift">
+            <div class="stepper-number">4</div>
+            <div class="stepper-card shadow-premium glass-morphism-card">
+              <h3>Pengkristalan (Pembentukan Butiran)</h3>
+              <ul>
+                <li>Ketika cairan mulai mengental dan mencapai tekstur tertentu, proses pengadukan diperkuat agar adonan berubah menjadi butiran halus.</li>
+                <li>Dari tahap ini muncul bentuk khas "gula semut", yaitu butiran kecil yang menyerupai sarang semut.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="stepper-item interaction-lift">
+            <div class="stepper-number">5</div>
+            <div class="stepper-card shadow-premium glass-morphism-card">
+              <h3>Pengayakan dan Pendinginan</h3>
+              <ul>
+                <li>Gula diayak untuk menghasilkan ukuran yang seragam.</li>
+                <li>Kemudian didinginkan agar kadar air stabil dan produk tidak menggumpal saat disimpan.</li>
+                <li class="important"><strong>Penting:</strong> Tahap ini sangat penting supaya produk tidak menggumpal saat disimpan.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="stepper-item interaction-lift">
+            <div class="stepper-number">6</div>
+            <div class="stepper-card shadow-premium glass-morphism-card">
+              <h3>Pengemasan dan Pengecekan Kualitas</h3>
+              <ul>
+                <li>Gula aren semut masuk ke tahap pengemasan dalam plastik food grade, standing pouch, atau botol.</li>
+                <li class="nested-list">
+                  <strong>Pada kemasan perlu dicantumkan:</strong>
+                  <ul>
+                    <li>Nama produk</li>
+                    <li>Berat bersih</li>
+                    <li>Tanggal produksi</li>
+                    <li>Masa simpan</li>
+                    <li>Komposisi</li>
+                    <li>Izin usaha (jika ada)</li>
+                  </ul>
+                </li>
+                <li>Kemasan yang rapi akan meningkatkan kepercayaan pembeli.</li>
+                <li>Pengecekan kualitas dilakukan melalui inspeksi rasa, aroma, warna, dan kebersihan.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="stepper-conclusion glass-morphism-card shadow-premium">
+            <p><strong>Hasilnya:</strong> Gula aren semut siap dipasarkan dengan kualitas rasa yang khas, kemasan menarik, serta peluang distribusi ke pasar tradisional, toko oleh-oleh, maupun marketplace online.</p>
           </div>
         </div>
       </div>

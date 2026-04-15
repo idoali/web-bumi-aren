@@ -50,6 +50,26 @@
           </ul>
         </div>
       </div>
+
+      <!-- Product 3: Gula Aren Semut -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="/sample-7.jpeg" alt="Gula Aren Semut">
+          <div class="overlay"></div>
+        </div>
+        <div class="product-info">
+          <h3>Gula Aren Semut</h3>
+          <p class="product-tag">Granulated Crystal</p>
+          <p class="product-desc">
+            Gula aren semut adalah produk alami bernilai tinggi yang berasal dari nira pohon aren.
+          </p>
+          <ul class="product-features">
+            <li>Butiran halus &amp; mudah larut</li>
+            <li>100% alami tanpa bahan tambahan</li>
+            <li>Cocok untuk minuman, kue, dan masakan</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </template>
